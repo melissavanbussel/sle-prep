@@ -1,13 +1,20 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "sle-prep"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  title: "SLE Prep"
+  sidebar:
+    contents:
+      - section: "Level A"
+        contents:
+          - href: index.qmd
+            text: "Home"
+      - section: "Level B"
+        contents:
+          - href: about.qmd
+            text: "About"
+      - section: "Level C"
 
 format:
   html:
