@@ -4,18 +4,18 @@ $theme-midnight-grape: #291528;
 $theme-lighter-green: #B9C5CB;
 $theme-sage: #5F7681;
 $theme-light-purple: #BBB7CC;
-$theme-ivory-mist: #F2EACF;
+$theme-ivory-mist: #FBF8EF;
 $theme-dark-teal: #073B3A;
 $theme-text-color: $theme-midnight-grape;
 
-@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-sans-serif: 'Figtree', sans-serif;
 $footer-bg: $theme-midnight-grape;
 $link-color: $theme-sage;
 $sidebar-bg: $theme-dark-teal;
 $body-bg: $theme-ivory-mist;
-$code-block-bg: $theme-dark-teal;
+$code-block-bg: $theme-midnight-grape;
 
 /*-- scss:rules --*/
 .sidebar-navigation {

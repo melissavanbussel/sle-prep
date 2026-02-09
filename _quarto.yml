@@ -7,7 +7,7 @@ website:
     contents:
       - section: "Level A"
         contents:
-          - href: index.qmd
+          - href: level_a/index.qmd
             text: "Home"
       - section: "Level B"
         contents:

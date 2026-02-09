@@ -28,7 +28,7 @@ jobs:
           cache-version: 1
 
       - name: Publish site
-        run: quarto render --output-dir="docs"
+        run: quarto render
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
