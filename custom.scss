@@ -1,0 +1,108 @@
+/*-- scss:defaults --*/
+
+$theme-midnight-grape: #291528;
+$theme-lighter-green: #1ed760;
+$theme-dark-purple: #493548;
+$theme-light-purple: #BBB7CC;
+$theme-ivory-mist: #EDE4BF;
+$theme-medium-gray: #282828;
+$theme-dark-teal: #073B3A;
+$theme-text-color: $theme-midnight-grape;
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@700&family=Montserrat&display=swap');
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$footer-bg: $theme-midnight-grape;
+$link-color: $theme-light-purple;
+$sidebar-bg: $theme-dark-teal;
+$sidebar-fg: $theme-ivory-mist;
+$code-block-bg: $theme-medium-gray;
+
+/*-- scss:rules --*/
+
+/* Display options for tables */
+table {
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+}
+td {
+  mid-width: 200px;
+}
+
+.navbar {
+  background-color: $theme-medium-gray;
+  color: $theme-text-color;
+}
+:root {
+  --bs-body-bg: $theme-ivory-mist !important;
+  --bs-card-bg: $theme-ivory-mist !important;
+}
+
+/* Scrollbar theming */
+::-webkit-scrollbar {
+    width: 12px; /* Vertical scrollbar width */
+    height: 12px; /* Horizontal scrollbar height */
+}
+::-webkit-scrollbar-track { /* Track (part the thumb slides within) */
+    background: $theme-ivory-mist;
+    border-radius: 10px; /* Rounded corners on the track */
+}
+::-webkit-scrollbar-thumb { /* Thumb (draggable part of the scrollbar) */
+    background-color: $theme-midnight-grape;
+    border-radius: 10px; /* Rounded corners on the thumb */
+    border: 3px solid $theme-ivory-mist; /* Makes the thumb slightly smaller than the track */
+}
+::-webkit-scrollbar-thumb:hover { /* Thumb hover effects */
+    background-color: $theme-lighter-green;
+}
+::-webkit-scrollbar-corner { /* Bottom corner of the scrollbar */
+    background: $theme-ivory-mist; /* Match the track background color */
+}
+select { /* Dropdown styling */
+    background-color: $theme-ivory-mist !important;
+    padding: 8px;
+    border: 1px solid $theme-text-color !important;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Make all headings and paragraph text white */
+h1, h2, h3, h4, h5, h6, p {
+  color: $theme-text-color;
+}
+
+/* Make the text in the sidebar (of the Quarto website, not the dashboard), dark gray */
+.sidebar-title {
+  color: $theme-ivory-mist;
+}
+
+/* Text colour of currently selected page in sidebar */
+div.sidebar-item-container .active {
+  color: $theme-dark-purple;
+}
+
+/* Text colour of noncurrently selected sidebar list items */
+div.sidebar-item-container {
+  color: $theme-ivory-mist;
+}
+
+/* Text colour of currently hovered on sidebar list item */
+div.sidebar-item-container:hover {
+  color: $theme-dark-purple;
+}
+
+/* Colour of "Next page" text in bottom right of each Quarto HTML webpage */
+.nav-page a {
+  color: $link-color;
+}
+
+/* Colour of "AUTHOR" text */
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading {
+  color: $link-color;
+}
+
+/* Colour of non-hovered list items in table of contents */
+.sidebar .toc-actions ul li a {
+  color: $theme-text-color !important;
+}

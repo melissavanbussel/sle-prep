@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: docs
 
 website:
   title: "SLE Prep"
@@ -19,10 +18,5 @@ website:
 format:
   html:
     theme:
-      - cosmo
-      - brand
-    css: styles.css
+      light: [cosmo, custom.scss]
     toc: true
-
-
-
